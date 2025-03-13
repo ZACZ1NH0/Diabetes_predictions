@@ -1,18 +1,18 @@
-#CHUẨN ĐOÁN BỆNH TIỂU ĐƯỜNG
-# 🏥 Diabetes Prediction - Machine Learning Project
+# 🏥 Diabetes Predictions - Machine Learning Project
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0.24%2B-orange) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ## 📌 Giới Thiệu
-Dự án này sử dụng các thuật toán Machine Learning để chẩn đoán bệnh tiểu đường dựa trên bộ dữ liệu y tế. Mục tiêu chính là phát triển một mô hình có độ chính xác cao để hỗ trợ bác sĩ trong việc đưa ra quyết định.
+Dự án này sử dụng các thuật toán Machine Learning để chẩn đoán bệnh tiểu đường dựa trên dữ liệu y tế. Mục tiêu chính là phát triển một mô hình chính xác để hỗ trợ bác sĩ trong việc đưa ra quyết định.
 
 ## 📂 Cấu Trúc Dự Án
 ```
-📁 diabetes-prediction
+📁 Diabetes_predictions
 │── 📂 data            # Thư mục chứa dữ liệu
 │── 📂 models          # Thư mục lưu các mô hình đã train
-│── 📂 notebooks       # Jupyter Notebook cho quá trình phân tích
+│── 📂 notebooks       # Jupyter Notebook phân tích dữ liệu
 │── 📂 src             # Mã nguồn chính
+│── requirements.txt   # Danh sách thư viện cần cài đặt
 │── README.md         # Tài liệu mô tả dự án
 ```
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
-Mở file `notebooks/Diabetes_Prediction.ipynb` và chạy từng cell.
+Mở file [`notebooks/Diabetes_Prediction.ipynb`](./notebooks/Diabetes_Prediction.ipynb) và chạy từng cell.
 
 ### 3️⃣ Chạy trên giao diện Tkinter (GUI)
 ```bash
@@ -57,7 +57,8 @@ python src/gui.py
 ## 📜 License
 Dự án này được phát hành dưới giấy phép **MIT License**.
 
-📬 Nếu bạn có câu hỏi, hãy liên hệ qua email: **soloyasuokom@.com**
+📬 Nếu bạn có câu hỏi, hãy liên hệ qua email: **your.email@example.com**
 
 ---
 **💖 Star repo này nếu bạn thấy hữu ích!** ⭐
+** Mới làm nên nhờ AI viết READ.ME :)**
