@@ -8,11 +8,11 @@ Dự án này sử dụng các thuật toán Machine Learning để chẩn đoá
 ## 📂 Cấu Trúc Dự Án
 ```
 📁 Diabetes_predictions
-│── 📂 data            # Thư mục chứa dữ liệu
-│── 📂 models          # Thư mục lưu các mô hình đã train
-│── 📂 notebooks       # Jupyter Notebook phân tích dữ liệu
-│── 📂 src             # Mã nguồn chính
-│── requirements.txt   # Danh sách thư viện cần cài đặt
+│── 📂 RandomForest.ipynb            
+│── 📂 LogisticsRegression.ipynb          
+│── 📂 ModelNeuralNetwork.ipynb       
+│── 📂 GUI.ipynb             
+│── requirements.txt   
 │── README.md         # Tài liệu mô tả dự án
 ```
 
@@ -20,6 +20,19 @@ Dự án này sử dụng các thuật toán Machine Learning để chẩn đoá
 Bộ dữ liệu sử dụng: **Pima Indians Diabetes Dataset** từ UCI Machine Learning Repository.
 - **Số lượng mẫu**: 768
 - **Số lượng đặc trưng**: 8
+- Mô tả dữ liệu:
+  Pregnancies: Số  lần mang thai
+  Glucose: Nồng độ  glucose huyết tương sau 2 giờ  trong xét nghiệm dung 
+nạp glucose đường uống.
+  BloodPressure: Huyết áp tâm trương (mm Hg)
+  SkinThickness: Độ dày nếp gấp da cơ tam đầu (mm)
+  Insulin: Insulin huyết thanh 2 giờ (mu U/ml)
+  BMI: Chỉ  số  khối cơ thể  (cân nặng tính bằng kg/ (chiều cao tính bằng m) 
+^2)
+  DiabetesPedigreeFunction:  Chỉ  số  truyền bệnh tiểu đường, phản ánh mức 
+độ di truyền của bệnh. 
+  Age: Tuổi (năm)
+  Outcome: Biến lớp (0 hoặc 1)
 - **Nhãn mục tiêu**: `1` (Có tiểu đường), `0` (Không có tiểu đường)
 
 ## 🏆 Mô Hình Sử Dụng
@@ -46,9 +59,9 @@ python src/gui.py
 ```
 
 ## 📊 Kết Quả
-- Logistic Regression đạt **78% accuracy** sau khi tối ưu siêu tham số.
-- Neural Network đạt **81% accuracy**, nhưng yêu cầu thời gian huấn luyện lâu hơn.
-
+- Logistic Regression đạt **69% accuracy** sau khi tối ưu siêu tham số.
+- Neural Network đạt **75% accuracy**, nhưng yêu cầu thời gian huấn luyện lâu hơn.
+- Random Forest đạt **73% accuracy**
 ## 🚀 Cải Tiến Trong Tương Lai
 - Áp dụng kỹ thuật xử lý dữ liệu mất cân bằng (`SMOTE`, `Class Weights`)
 - Thử nghiệm với **XGBoost** để nâng cao độ chính xác
@@ -57,7 +70,7 @@ python src/gui.py
 ## 📜 License
 Dự án này được phát hành dưới giấy phép **MIT License**.
 
-📬 Nếu bạn có câu hỏi, hãy liên hệ qua email: **your.email@example.com**
+📬 Nếu bạn có câu hỏi, hãy liên hệ qua email: **soloyasuokom@gmail.com**
 
 ---
 **💖 Star repo này nếu bạn thấy hữu ích!** ⭐
